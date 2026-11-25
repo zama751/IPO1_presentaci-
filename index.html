@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Traumatismes, esquinços i fractures · Guia d'emergències</title>
+<meta name="description" content="Presentació interactiva: guia pràctica d'actuació davant traumatismes, esquinços i fractures.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Icones -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-cross" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></symbol>
+    <symbol id="i-splint" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="6" rx="1.5"/><path d="M8 7v10M16 7v10"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18h.01"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+    <symbol id="i-shrink" viewBox="0 0 24 24"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></symbol>
+    <symbol id="i-pain" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+    <symbol id="i-swell" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="8.5" stroke-dasharray="2.5 2.5"/></symbol>
+    <symbol id="i-bone" viewBox="0 0 24 24"><path d="M6 3.5a2.5 2.5 0 0 0-2 4.2L6.5 10 4 12.5l7.5 7.5 2.5-2.5 2.3 2.5a2.5 2.5 0 0 0 4.2-2 2.5 2.5 0 0 0-2-4.2L17 12.5l-5.5-5.5L9 4.5A2.5 2.5 0 0 0 6 3.5z"/><path d="M10 13l2-2"/></symbol>
+    <symbol id="i-move" viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M9 6l3-3 3 3M9 18l3 3 3-3M6 9l-3 3 3 3M18 9l3 3-3 3"/></symbol>
+    <symbol id="i-bruise" viewBox="0 0 24 24"><path d="M12 4c4.5 0 8 3 8 7.5S16.5 20 12 20 4 16.5 4 12.5 7.5 4 12 4z"/><circle cx="10" cy="11" r="1.4"/><circle cx="14.5" cy="13.5" r="1.4"/><circle cx="12" cy="8.5" r="1"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 13V5a1.8 1.8 0 0 1 3.6 0v6M11.6 11V3.8a1.8 1.8 0 0 1 3.6 0V11M15.2 11V6a1.8 1.8 0 0 1 3.6 0v8a7 7 0 0 1-7 7h-.6a7 7 0 0 1-5.9-3.2L3.6 15a1.8 1.8 0 0 1 3-2L8 14.5"/></symbol>
+    <symbol id="i-thermo" viewBox="0 0 24 24"><path d="M14 14.8V5a2 2 0 1 0-4 0v9.8a4 4 0 1 0 4 0z"/><path d="M12 11v6"/></symbol>
+    <symbol id="i-bandage" viewBox="0 0 24 24"><rect x="2.5" y="8" width="19" height="8" rx="4" transform="rotate(-45 12 12)"/><path d="M10.5 10.5h.01M13.5 13.5h.01M10.5 13.5h.01M13.5 10.5h.01"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M4 20l7-7"/><path d="M11 13l2-6 6-4 2 2-4 6-6 2z"/></symbol>
+    <symbol id="i-food" viewBox="0 0 24 24"><path d="M6 3v7a2 2 0 0 0 2 2v9M10 3v7a2 2 0 0 1-2 2M8 3v5M17 21V3c-2 1-3 4-3 8h3"/></symbol>
+    <symbol id="i-stretch" viewBox="0 0 24 24"><path d="M3 12h18M7 8l-4 4 4 4M17 8l4 4-4 4"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="M3 16v-4l2.2-5h13.6L21 12v4z"/><circle cx="7.5" cy="16.5" r="1.8"/><circle cx="16.5" cy="16.5" r="1.8"/><path d="M3 12h18"/></symbol>
+    <symbol id="i-tingle" viewBox="0 0 24 24"><path d="M4 8l2-2 2 2 2-2 2 2 2-2 2 2 2-2 2 2M4 14l2-2 2 2 2-2 2 2 2-2 2 2 2-2 2 2"/><path d="M8 20h8"/></symbol>
+    <symbol id="i-weak" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.2"/><path d="M12 8v6M8 11h8M12 14l-3 7M12 14l3 7"/><path d="M4 4l16 16" opacity=".9"/></symbol>
+    <symbol id="i-neck" viewBox="0 0 24 24"><circle cx="12" cy="6.5" r="3.5"/><path d="M10 10v3h4v-3M6 21c0-4 2.5-7 6-7s6 3 6 7"/><path d="M5 6.5h1.8M17.2 6.5H19"/></symbol>
+    <symbol id="i-lungs" viewBox="0 0 24 24"><path d="M12 4v8M12 10c-1.5 0-3-1-3-3M12 10c1.5 0 3-1 3-3"/><path d="M8.5 7C5 8 3 13 3 17.5 3 19.5 4.5 20 6 20c2.5 0 3.5-2 3.5-5V9"/><path d="M15.5 7c3.5 1 5.5 6 5.5 10.5 0 2-1.5 2.5-3 2.5-2.5 0-3.5-2-3.5-5V9"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/><path d="M4.5 12H9l1.5-2.5 2 5 1.5-2.5h5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.3-5.5 6.5-5.5s5.7 2 6.5 5.5"/><path d="M15.5 4.8a3.5 3.5 0 0 1 0 6.4M18 14.8c1.8.8 3 2.6 3.5 5.2"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.4-5.7L4 8.5"/><path d="M4 3.5v5h5"/></symbol>
+    <symbol id="i-question" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.6 2.6 0 1 1 3.7 2.4c-.8.4-1.2 1-1.2 1.9v.4M12 17h.01"/></symbol>
+  </defs>
+</svg>
+
+<div class="progress" aria-hidden="true"><div class="progress__bar" id="progressBar"></div></div>
+
+<div class="viewport" id="viewport">
+<main class="deck" id="deck" aria-roledescription="presentació" aria-label="Traumatismes, esquinços i fractures">
+
+  <!-- ===================== 1. PORTADA ===================== -->
+  <section class="slide slide--cover theme-dark" data-title="Portada" aria-roledescription="diapositiva">
+    <div class="cover__grid" aria-hidden="true"></div>
+    <div class="cover__text">
+      <p class="kicker kicker--light r" style="--d:0"><span class="kicker__dot"></span>Tema 6 · Primers auxilis</p>
+      <h1 class="cover__title r" style="--d:1">TRAUMATISMES,<br>ESQUINÇOS<br><span>I FRACTURES</span></h1>
+      <p class="cover__sub r" style="--d:2">Guia pràctica d'actuació en emergències.</p>
+      <div class="pas-mini r" style="--d:3">
+        <span><svg class="ic"><use href="#i-shield"/></svg>Protegir</span>
+        <span class="is-red"><svg class="ic"><use href="#i-phone"/></svg>Avisar</span>
+        <span><svg class="ic"><use href="#i-cross"/></svg>Socórrer</span>
+      </div>
+    </div>
+    <div class="cover__visual r" style="--d:2" aria-hidden="true">
+      <div class="emblem">
+        <span class="emblem__ring"></span><span class="emblem__ring emblem__ring--2"></span>
+        <div class="emblem__core">
+          <svg viewBox="0 0 24 24" class="emblem__cross"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg>
+        </div>
+        <svg class="ecg" viewBox="0 0 800 120" preserveAspectRatio="none"><path d="M0 60H250L275 60L292 20L312 104L332 6L352 92L368 60H420L438 46L456 60H800"/></svg>
+      </div>
+      <div class="badge112"><small>Emergències</small><b>112</b></div>
+    </div>
+  </section>
+
+  <!-- ===================== 2. IDENTIFICACIÓ ===================== -->
+  <section class="slide" data-title="Identificació" aria-roledescription="diapositiva">
+    <header class="s-head r" style="--d:0">
+      <p class="kicker"><b>02</b>Identificació de les lesions</p>
+      <h2>Quina lesió és?</h2>
+    </header>
+    <div class="lesions">
+      <article class="lesion r" style="--d:1">
+        <img src="assets/esquinc.svg" alt="Il·lustració del turmell amb un lligament estirat">
+        <h3>Esquinç</h3>
+        <p>Lesió dels <b>lligaments</b> d'una articulació.</p>
+      </article>
+      <article class="lesion r" style="--d:2">
+        <img src="assets/fractura-tancada.svg" alt="Il·lustració d'un os trencat amb la pell intacta">
+        <h3>Fractura tancada</h3>
+        <p>Os trencat, <b>sense ferida</b> que hi comuniqui.</p>
+      </article>
+      <article class="lesion lesion--alert r" style="--d:3">
+        <img src="assets/fractura-oberta.svg" alt="Il·lustració esquemàtica d'una fractura amb ferida oberta">
+        <h3>Fractura oberta</h3>
+        <p><b>Ferida</b> que comunica amb l'os fracturat.</p>
+      </article>
+    </div>
+    <div class="symptoms r" style="--d:4">
+      <span class="symptoms__label">Símptomes</span>
+      <span class="chip"><svg class="ic"><use href="#i-pain"/></svg>Dolor intens</span>
+      <span class="chip"><svg class="ic"><use href="#i-swell"/></svg>Inflor</span>
+      <span class="chip"><svg class="ic"><use href="#i-bone"/></svg>Deformitat</span>
+      <span class="chip"><svg class="ic"><use href="#i-move"/></svg>Dificultat de moviment</span>
+      <span class="chip"><svg class="ic"><use href="#i-bruise"/></svg>Hematomes</span>
+      <span class="chip chip--red"><svg class="ic"><use href="#i-drop"/></svg>Ferida o hemorràgia <em>(oberta)</em></span>
+    </div>
+    <p class="note r" style="--d:5"><svg class="ic"><use href="#i-alert"/></svg><span>Pels símptomes <b>no sempre</b> es pot distingir un esquinç d'una fractura. <b>Si dubtes, actua com si fos una fractura.</b></span></p>
+  </section>
+
+  <!-- ===================== 3. PROTOCOL ===================== -->
+  <section class="slide" data-title="Protocol" aria-roledescription="diapositiva">
+    <header class="s-head r" style="--d:0">
+      <p class="kicker"><b>03</b>Protocol d'actuació</p>
+      <h2>Pas a pas</h2>
+    </header>
+    <div class="pas">
+      <div class="pas__item r" style="--d:1"><svg class="ic"><use href="#i-shield"/></svg><span>Protegir</span></div>
+      <div class="pas__item pas__item--red r" style="--d:2"><svg class="ic"><use href="#i-phone"/></svg><span>Avisar</span></div>
+      <div class="pas__item r" style="--d:3"><svg class="ic"><use href="#i-cross"/></svg><span>Socórrer</span></div>
+    </div>
+    <ol class="steps">
+      <li class="step r" style="--d:4"><b class="step__n">1</b><h3>Protegir</h3><p>Entorn segur per a tu i per a la víctima.</p></li>
+      <li class="step step--red r" style="--d:5"><b class="step__n">2</b><h3>Avisar · 112</h3><p>Fractura important o oberta, hemorràgia greu o signes d'alarma.</p></li>
+      <li class="step r" style="--d:6"><b class="step__n">3</b><h3>Socórrer</h3><p>Valora la víctima i segueix les indicacions del 112.</p></li>
+      <li class="step r" style="--d:7"><b class="step__n">4</b><h3>Immobilitzar</h3><p>Zona quieta, en la posició trobada. Sense recol·locar.</p></li>
+      <li class="step r" style="--d:8"><b class="step__n">5</b><h3>Vigilar</h3><p>Respiració, consciència i canvis fins que arribi l'ajuda.</p></li>
+    </ol>
+  </section>
+
+  <!-- ===================== 4. IMMOBILITZACIÓ ===================== -->
+  <section class="slide" data-title="Immobilització" aria-roledescription="diapositiva">
+    <header class="s-head r" style="--d:0">
+      <p class="kicker"><b>04</b>Immobilització provisional</p>
+      <h2>Quiet i com l'has trobat</h2>
+    </header>
+    <div class="split">
+      <figure class="figure r" style="--d:1">
+        <img src="assets/brac-immobilitzat.svg" alt="Persona amb el braç immobilitzat amb un mocador triangular i material tou">
+        <figcaption>Mocador triangular + material tou, sense forçar el braç</figcaption>
+      </figure>
+      <div class="split__body">
+        <ul class="checklist">
+          <li class="r" style="--d:2"><svg class="ic ok"><use href="#i-check"/></svg><span>Evita moviments innecessaris</span></li>
+          <li class="r" style="--d:3"><svg class="ic ok"><use href="#i-check"/></svg><span>Mantén el membre <b>en la posició trobada</b></span></li>
+          <li class="r" style="--d:4"><svg class="ic ok"><use href="#i-check"/></svg><span>Material tou i fèrula improvisada <b>només si</b> no mous ni agreuges la lesió</span></li>
+          <li class="r" style="--d:5"><svg class="ic ok"><use href="#i-check"/></svg><span>Fixa <b>sense estrènyer</b></span></li>
+          <li class="r is-no" style="--d:6"><svg class="ic no"><use href="#i-x"/></svg><span>No redrecis l'os ni recol·loquis articulacions</span></li>
+        </ul>
+        <div class="vitals r" style="--d:7">
+          <p class="vitals__title">Comprova la mà o el peu, <b>sense manipular la lesió</b></p>
+          <div class="vitals__row">
+            <span><svg class="ic"><use href="#i-drop"/></svg>Color</span>
+            <span><svg class="ic"><use href="#i-hand"/></svg>Sensibilitat</span>
+            <span><svg class="ic"><use href="#i-thermo"/></svg>Temperatura</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 5. FRACTURA OBERTA ===================== -->
+  <section class="slide slide--warn" data-title="Fractura oberta" aria-roledescription="diapositiva">
+    <header class="s-head r" style="--d:0">
+      <p class="kicker kicker--red"><b>05</b>Fractura oberta</p>
+      <h2><span class="tag-alert"><svg class="ic"><use href="#i-alert"/></svg>Atenció!</span> Os i ferida en contacte</h2>
+    </header>
+    <div class="split split--wide">
+      <figure class="figure figure--plain r" style="--d:1">
+        <img src="assets/oberta-actuacio.svg" alt="Esquema: gasa estèril sobre la ferida i pressió al voltant, mai sobre l'os">
+      </figure>
+      <ol class="numlist">
+        <li class="numlist__item numlist__item--red r" style="--d:2"><b>1</b><span>Truca al <strong>112</strong></span></li>
+        <li class="numlist__item r" style="--d:3"><b>2</b><span><strong>No toquis</strong> ni intentis introduir l'os</span></li>
+        <li class="numlist__item r" style="--d:4"><b>3</b><span>Cobreix amb <strong>gasa estèril</strong>, sense pressionar sobre l'os</span></li>
+        <li class="numlist__item r" style="--d:5"><b>4</b><span>Hemorràgia: pressió <strong>al voltant</strong> de la ferida</span></li>
+        <li class="numlist__item r" style="--d:6"><b>5</b><span><strong>No moguis</strong> la víctima si no cal</span></li>
+        <li class="numlist__item r" style="--d:7"><b>6</b><span>Espera els serveis d'emergències</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== 6. LESIÓ MEDUL·LAR ===================== -->
+  <section class="slide" data-title="Lesió medul·lar" aria-roledescription="diapositiva">
+    <header class="s-head r" style="--d:0">
+      <p class="kicker"><b>06</b>Sospita de lesió medul·lar</p>
+      <h2>Cap, coll i esquena: no es mouen</h2>
+    </header>
+    <div class="spinal">
+      <div class="spinal__signs">
+        <h3 class="col-title r" style="--d:1">Sospita si hi ha…</h3>
+        <ul class="signs">
+          <li class="r" style="--d:2"><svg class="ic"><use href="#i-pain"/></svg>Dolor intens al coll o a l'esquena</li>
+          <li class="r" style="--d:3"><svg class="ic"><use href="#i-tingle"/></svg>Formigueig o pèrdua de sensibilitat</li>
+          <li class="r" style="--d:4"><svg class="ic"><use href="#i-weak"/></svg>Debilitat o paràlisi</li>
+          <li class="r" style="--d:5"><svg class="ic"><use href="#i-move"/></svg>Dificultat per moure extremitats</li>
+          <li class="r is-cause" style="--d:6"><svg class="ic"><use href="#i-car"/></svg>Trànsit, caiguda important o cop violent</li>
+        </ul>
+        <figure class="figure figure--neck r" style="--d:7">
+          <img src="assets/coll-estabilitzat.svg" alt="Socorredor agenollat que manté estables el cap i el coll d'una persona estirada">
+          <figcaption>Cap i coll estables, en la posició trobada</figcaption>
+        </figure>
+      </div>
+      <figure class="spinal__spine r" style="--d:3">
+        <img src="assets/columna.svg" alt="Columna vertebral amb la medul·la espinal i la zona cervical destacada">
+      </figure>
+      <div class="spinal__protocol">
+        <h3 class="col-title r" style="--d:4">Protocol</h3>
+        <ol class="numlist numlist--compact">
+          <li class="numlist__item r" style="--d:5"><b>1</b><span><strong>No moguis</strong> la víctima</span></li>
+          <li class="numlist__item numlist__item--red r" style="--d:6"><b>2</b><span>Truca <strong>immediatament</strong> al 112</span></li>
+          <li class="numlist__item r" style="--d:7"><b>3</b><span>Demana-li que no mogui el cap ni el coll</span></li>
+          <li class="numlist__item r" style="--d:8"><b>4</b><span>Cap i coll <strong>estables</strong>, sense forçar</span></li>
+          <li class="numlist__item r" style="--d:9"><b>5</b><span>Vigila respiració i consciència</span></li>
+          <li class="numlist__item numlist__item--vital r" style="--d:10"><b>6</b><span>No respira amb normalitat? <strong>Instruccions del 112 i RCP</strong> si correspon</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 7. QUÈ NO S'HA DE FER ===================== -->
+  <section class="slide slide--danger theme-dark" data-title="Què no fer" aria-roledescription="diapositiva">
+    <div class="danger__stripes" aria-hidden="true"></div>
+    <header class="s-head r" style="--d:0">
+      <p class="kicker kicker--light"><b>07</b>Errors greus</p>
+      <h2>Què NO s'ha de fer mai</h2>
+    </header>
+    <ul class="nevers">
+      <li class="never r" style="--d:1"><svg class="ic"><use href="#i-ban"/></svg><span><b>NO</b> recol·locar els ossos</span></li>
+      <li class="never r" style="--d:2"><svg class="ic"><use href="#i-ban"/></svg><span><b>NO</b> estirar ni redreçar l'extremitat</span></li>
+      <li class="never never--wide r" style="--d:3"><svg class="ic"><use href="#i-ban"/></svg><span><b>NO</b> moure una víctima amb sospita de lesió medul·lar <small>excepte perill immediat o per mantenir les funcions vitals</small></span></li>
+      <li class="never r" style="--d:4"><svg class="ic"><use href="#i-ban"/></svg><span><b>NO</b> pressionar sobre un os exposat</span></li>
+      <li class="never r" style="--d:5"><svg class="ic"><use href="#i-ban"/></svg><span><b>NO</b> retirar objectes clavats</span></li>
+      <li class="never r" style="--d:6"><svg class="ic"><use href="#i-ban"/></svg><span><b>NO</b> donar menjar ni beguda</span></li>
+      <li class="never r" style="--d:7"><svg class="ic"><use href="#i-ban"/></svg><span><b>NO</b> moure la zona per «comprovar» la fractura</span></li>
+    </ul>
+  </section>
+
+  <!-- ===================== 8. DEMOSTRACIÓ ===================== -->
+  <section class="slide" data-title="Demostració" aria-roledescription="diapositiva">
+    <header class="s-head s-head--row r" style="--d:0">
+      <div>
+        <p class="kicker"><b>08</b>Demostració pràctica · 3-4 min</p>
+        <h2>Simulació: caiguda i possible fractura del braç</h2>
+      </div>
+      <div class="timer" id="timer" aria-label="Cronòmetre de la demostració">
+        <span class="timer__time" id="timerTime" aria-live="off">00:00</span>
+        <button class="btn-round" id="timerToggle" type="button" aria-label="Iniciar cronòmetre"><svg class="ic"><use href="#i-play"/></svg></button>
+        <button class="btn-round btn-round--ghost" id="timerReset" type="button" aria-label="Reiniciar cronòmetre"><svg class="ic"><use href="#i-reset"/></svg></button>
+      </div>
+    </header>
+    <div class="demo">
+      <div class="scenario r" style="--d:1">
+        <p class="scenario__label">Escenari</p>
+        <p class="scenario__text">Una persona cau. <b>Dolor intens</b>, <b>inflor</b> i <b>no pot moure el braç</b>.</p>
+        <p class="scenario__mat"><svg class="ic"><use href="#i-bandage"/></svg>Mocador triangular, embenat o material de simulació</p>
+        <p class="scenario__safe"><svg class="ic"><use href="#i-shield"/></svg>Cap maniobra perillosa sobre cap company</p>
+      </div>
+      <div class="roles">
+        <article class="role r" style="--d:2"><span class="role__n">P1</span><h3>Narrador/a</h3><p>Explica el protocol en veu alta.</p><q>«Primer de tot: l'entorn és segur?»</q></article>
+        <article class="role r" style="--d:3"><span class="role__n">P2</span><h3>Víctima</h3><p>Cau i es queixa. Subjecta el braç.</p><q>«Ai! No el puc moure…»</q></article>
+        <article class="role role--red r" style="--d:4"><span class="role__n">P3</span><h3>Detecta i avisa</h3><p>Simula la trucada al 112.</p><q>«Hola, 112? Una noia ha caigut…»</q></article>
+        <article class="role r" style="--d:5"><span class="role__n">P4</span><h3>Protegeix i immobilitza</h3><p>Material tou i mocador, sense forçar.</p><q>«No el moguis, te'l subjecto així.»</q></article>
+      </div>
+    </div>
+    <ol class="timeline r" style="--d:6">
+      <li><b>1</b>Seguretat</li>
+      <li><b>2</b>Apropar-se</li>
+      <li><b>3</b>Què ha passat?</li>
+      <li><b>4</b>Valorar sense tocar</li>
+      <li class="is-red"><b>5</b>Avís 112</li>
+      <li><b>6</b>Immobilitzar</li>
+      <li><b>7</b>Esperar ajuda</li>
+    </ol>
+  </section>
+
+  <!-- ===================== 9. PREGUNTES ===================== -->
+  <section class="slide" data-title="Preguntes" aria-roledescription="diapositiva">
+    <header class="s-head r" style="--d:0">
+      <p class="kicker"><b>09</b>Ara vosaltres</p>
+      <h2>Què hem de fer?</h2>
+    </header>
+    <div class="quizzes">
+      <div class="quiz r" style="--d:1" data-answer="B">
+        <p class="quiz__n">Pregunta 1</p>
+        <h3 class="quiz__q">Una persona cau i té el braç <b>deformat</b>.</h3>
+        <div class="quiz__opts" role="group" aria-label="Respostes de la pregunta 1">
+          <button type="button" class="opt" data-option="A"><b>A</b>Intentar recol·locar l'os.</button>
+          <button type="button" class="opt" data-option="B"><b>B</b>Immobilitzar-lo en la posició trobada i demanar ajuda.</button>
+          <button type="button" class="opt" data-option="C"><b>C</b>Fer que mogui el braç per comprovar si està trencat.</button>
+        </div>
+        <p class="quiz__fb" aria-live="polite" data-ok="Correcte! Posició trobada, sense forçar, i avisar." data-ko="Incorrecte. La resposta és la B: immobilitzar-lo tal com està i demanar ajuda."></p>
+      </div>
+      <div class="quiz r" style="--d:2" data-answer="C">
+        <p class="quiz__n">Pregunta 2</p>
+        <h3 class="quiz__q">Sospitem una <b>lesió medul·lar</b>.</h3>
+        <div class="quiz__opts" role="group" aria-label="Respostes de la pregunta 2">
+          <button type="button" class="opt" data-option="A"><b>A</b>Ajudar-la a aixecar-se.</button>
+          <button type="button" class="opt" data-option="B"><b>B</b>Girar-li el coll per comprovar si li fa mal.</button>
+          <button type="button" class="opt" data-option="C"><b>C</b>Evitar moure-la, trucar al 112 i vigilar-ne la respiració.</button>
+        </div>
+        <p class="quiz__fb" aria-live="polite" data-ok="Correcte! No moure, 112 i vigilar la respiració." data-ko="Incorrecte. La resposta és la C: no moure-la, trucar al 112 i vigilar-la."></p>
+      </div>
+    </div>
+    <button type="button" class="link-reset r" style="--d:3" id="quizReset"><svg class="ic"><use href="#i-reset"/></svg>Tornar a començar</button>
+  </section>
+
+  <!-- ===================== 10. TANCAMENT ===================== -->
+  <section class="slide slide--end theme-dark" data-title="Tancament" aria-roledescription="diapositiva">
+    <div class="end__text">
+      <p class="kicker kicker--light r" style="--d:0"><span class="kicker__dot kicker__dot--white"></span>Per recordar</p>
+      <blockquote class="end__quote r" style="--d:1">«Una bona actuació pot evitar que una lesió <span>empitjori</span>.»</blockquote>
+      <p class="end__pas r" style="--d:2"><span>Protegir.</span> <span>Avisar.</span> <span>Socórrer.</span></p>
+      <p class="end__thanks r" style="--d:3">Gràcies · Preguntes?</p>
+    </div>
+    <figure class="end__visual r" style="--d:2">
+      <img src="assets/farmaciola.svg" alt="Farmaciola de primers auxilis">
+      <div class="badge112 badge112--light"><small>Emergències</small><b>112</b></div>
+    </figure>
+    <p class="end__sources r" style="--d:4">Basat en recomanacions de Creu Roja, Consell Català de Ressuscitació i SEM (112 Catalunya). Material educatiu: no substitueix un curs de primers auxilis.</p>
+  </section>
+
+  <p class="deck-footer" aria-hidden="true"><svg class="ic"><use href="#i-cross"/></svg>Guia d'emergències · Tema 6</p>
+</main>
+</div>
+
+<nav class="controls" id="controls" aria-label="Navegació de la presentació">
+  <button type="button" class="ctrl" id="prevBtn" aria-label="Diapositiva anterior"><svg class="ic"><use href="#i-left"/></svg></button>
+  <span class="ctrl__count" id="counter" aria-live="polite">1 / 10</span>
+  <button type="button" class="ctrl ctrl--primary" id="nextBtn" aria-label="Diapositiva següent"><svg class="ic"><use href="#i-right"/></svg></button>
+  <span class="ctrl__sep" aria-hidden="true"></span>
+  <button type="button" class="ctrl" id="fsBtn" aria-label="Pantalla completa" title="Pantalla completa (F)"><svg class="ic"><use href="#i-expand"/></svg></button>
+</nav>
+<nav class="dots" id="dots" aria-label="Anar a una diapositiva"></nav>
+
+<script src="script.js"></script>
+</body>
+</html>
